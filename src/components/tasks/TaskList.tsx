@@ -1,6 +1,5 @@
 import { Task } from "@/types/index"
 import TaskCard from "./TaskCard"
-import { string } from "zod"
 
 type TaskListProps = {
     tasks: Task[]
@@ -40,7 +39,6 @@ export default function TaskList({tasks}: TaskListProps) {
         currentGroup = [...currentGroup, task]
         return { ...acc, [task.status]: currentGroup };
     }, initialStatusGroup);
-    console.log(groupedTasks)
 
     return (
         <>
