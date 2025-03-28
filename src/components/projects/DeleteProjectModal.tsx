@@ -6,7 +6,6 @@ import ErrorMessage from "../ErrorMessage";
 import { CheckPasswordForm } from '@/types/index';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { checkPassword } from '@/api/AuthApi';
-import { error } from 'console';
 import { toast } from 'react-toastify';
 import { deleteProject } from '@/api/ProjectAPI';
 
